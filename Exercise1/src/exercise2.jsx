@@ -7,6 +7,3 @@ export default function Buttons(){
     )
 }
 
-// function clicked(){
-//    alert("clicked")
-// }
