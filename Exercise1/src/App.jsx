@@ -6,6 +6,8 @@ import ThreeButtons from './exercise3'
 import ClickedTimes from './exercise4'
 import List from './exercise5'
 import Form from './exercise7'
+import Animals from './exercise6'
+import Animal from './animal'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +21,7 @@ function App() {
         <li><a href='#exercise3'>Exercise 3</a></li>
         <li><a href='#exercise4'>Exercise 4</a></li>
         <li><a href='#exercise5'>Exercise 5</a></li>
+        <li><a href='#exercise6'>Exercise 6</a></li>
         <li><a href='#exercise7'>Exercise 7</a></li>
       </ul>
       </nav>
@@ -36,6 +39,9 @@ function App() {
       </div>
       <div id='exercise5' className='flex justify-center items-center h-screen'>
         <List/>
+      </div>
+      <div id='exercise6' className='flex justify-center items-center h-screen'>
+        <Animals/>
       </div>
       <div id='exercise7' className='flex justify-center items-center h-screen'>
         <Form/>

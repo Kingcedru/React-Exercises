@@ -5,7 +5,7 @@ export default function List(){
     return(
         <div>
             <ul>
-                {animals.map((item) => <li>{item}</li>)}
+                {animals.map((item,index) => <li key={index}>{item}</li>)}
             </ul>
         </div>
     )
