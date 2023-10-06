@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Hello from './exercise1'
-import Buttons from './exercise2'
 
 function App() {
   const [count, setCount] = useState(0)
