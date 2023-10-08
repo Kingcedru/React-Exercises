@@ -6,9 +6,22 @@ import ThreeButtons from './exercise3'
 import ClickedTimes from './exercise4'
 import List from './exercise5'
 import Form from './exercise7'
+import Jokes from './exercise8'
 
 function App() {
   const [count, setCount] = useState(0)
+  const joke = [
+    {
+      "id": 1,
+      "setup": "What's the best thing about a Boolean?",
+      "punchline": "Even if you're wrong, you're only off by a bit"
+    },
+    {
+      "id": 2,
+      "setup": "Why do programmers wear glasses?",
+      "punchline": "Because they need to C#"
+    }
+  ]
 
   return (
     <div className='grid'>
@@ -19,7 +32,9 @@ function App() {
         <li><a href='#exercise3'>Exercise 3</a></li>
         <li><a href='#exercise4'>Exercise 4</a></li>
         <li><a href='#exercise5'>Exercise 5</a></li>
+        <li><a href='#exercise6'>Exercise 6</a></li>
         <li><a href='#exercise7'>Exercise 7</a></li>
+        <li><a href='#exercise8'>Exercise 8</a></li>
       </ul>
       </nav>
       <div id='exercise1' className='flex justify-center items-center h-screen'>
@@ -37,8 +52,16 @@ function App() {
       <div id='exercise5' className='flex justify-center items-center h-screen'>
         <List/>
       </div>
+      <div id='exercise6' className='flex justify-center items-center h-screen'>
+        <List/>
+      </div>
       <div id='exercise7' className='flex justify-center items-center h-screen'>
         <Form/>
+      </div>
+      <div id='exercise8' className='flex justify-center items-center h-screen gap-10 bg-green-100'>
+        {
+        joke.map(elt=><Jokes key={elt.id} setup={elt.setup} punchline={elt.punchline}/>)
+        }
       </div>
     </div>
 
